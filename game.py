@@ -3,10 +3,10 @@
 import argparse
 
 parser = argparse.ArgumentParser(description='Hanoi Tower Game')
-parser.add_argument('--num_disks', type=int, default=3, help='Number of disks in the game')
+parser.add_argument('--num_disk', type=int, default=3, help='Number of disks in the game')
 
 args = parser.parse_args()
-num_disks = args.num_disks
+num_disks = args.num_disk
 
 class HanoiTower:
     def __init__(self, num_disks=3):
